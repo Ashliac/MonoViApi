@@ -106,13 +106,14 @@ export function generateCaseEmailTemplate(
                     <p><strong>Name:</strong> ${name}</p>
                     <p><strong>Genre:</strong> ${genre}</p>
                     <p><strong>Age:</strong> ${age}</p>
-                    <p><strong>Country:</strong> ${country}</p>
-                    <p><strong>City:</strong> ${city}</p>
+                    
                 </div>
                 <div class="detail-group">
                     <h2>Location Information</h2>
                     <p><strong>Latitude:</strong> ${lat}</p>
                     <p><strong>Longitude:</strong> ${lng}</p>
+                    <p><strong>Country:</strong> ${country}</p>
+                    <p><strong>City:</strong> ${city}</p>
                 </div>
             </div>
         </div>
@@ -125,7 +126,7 @@ export function generateCaseEmailTemplate(
 }
 
 export const generateMapboxStaticImageURL = (lat: number, lng: number) => {
-    const accessToken = envs.MAPBOX_ACCESS_TOKEN; // Reemplaza con tu token de acceso de Mapbox
+    const accessToken = envs.MAPBOX_ACCESS_TOKEN; 
     const zoom = 15; // Nivel de zoom
     const width = 400; // Ancho de la imagen
     const height = 400; // Altura de la imagen
